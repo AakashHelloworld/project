@@ -1,0 +1,1876 @@
+@font-face {
+    font-family: 'Twilio Sans Display';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7071.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Display';
+    font-weight: 800;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7072.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 700;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7098.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7097.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 600;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7110.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7109.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7105.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 500;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7106.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7107.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Text';
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7108.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Mono Light';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://assets.swoogo.com/custom-font/7089.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Twilio Sans Mono Light';
+    font-weight: 300;
+    font-style: italic;
+    src: url('https://assets.swoogo.com/custom-font/7090.ttf') format('truetype');
+}
+
+
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 60%;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    html{
+        font-size:55% ;
+    }
+}
+
+
+
+body{
+    font-family: Twilio Sans Text;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ...................................Nav bar stylling............................................. */
+
+/* ...................................Nav bar first part stylling............................................. */
+.navbar__firstpart__language__image{
+    margin-top: .2rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: .8rem;
+}
+
+.navbar__firstpart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-image: linear-gradient(to right, #FCE0EF , #fef6fa);
+    min-height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar__firstpart__language, .navbar__firstpart__User{
+    margin-right: .8rem;
+}
+.navbar__firstpart__login{
+    margin-right: 10.9rem;
+    border-left: 1px solid #CACDD8;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #030B5D; 
+    padding: 0rem 1rem;
+}
+.navbar__select{
+    border: none;
+    background-color: transparent;
+    /* font-family: 'Whitney SSm'; */
+    font-style: normal;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 21px;
+}
+@media screen and (max-width: 980px) {
+    .navbar__firstpart__login{
+        margin-right: 2.4rem;
+    }
+    
+}
+/* ...................................Nav bar second part stylling............................................. */
+
+.navbar__secondpart{
+    height: 10.2rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+}
+.navbar__secondpart--smallbox{
+    width: 85%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__mainlogo{
+    width: 22.4rem;
+    height: 4.05rem;
+}
+.navbar__secondpart__links_container{
+    display: flex;
+}
+.navbar__secondpart__links{
+    display: flex;
+    align-items: center;
+}
+.navbar__secondpart__links a{
+    padding: 1rem;
+    margin-right: 2.7rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 21px;
+    color: #001541;
+}
+
+
+
+
+.navbar__register{
+    padding: 1.4rem 4.6rem;
+    background-color: #533E8A;
+    border-radius: 1rem;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #FFFFFF;
+}
+.navbar__secondpart__links_container__mobile{
+    display: none;
+}
+.navbar__mainlogo__mobile{
+    display: none;
+}
+.fa-bars{
+    font-size: 2.4rem;
+}
+
+.fa-xmark{
+    font-size: 2.4rem;
+}
+@media screen and (max-width:1250px) {
+    .navbar__secondpart__links_container__mobile{
+    display: flex;
+    align-items: center;
+    }
+    .navbar__secondpart__links_container{
+        display: none;
+    }
+    .navbar__mainlogo__mobile{
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .navbar__mainlogo{
+        display: none;
+    }
+    .navbar__secondpart{
+        min-height: 9.3rem;
+}
+.navbar__register{
+    padding: 1rem 2.35rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #FFFFFF;
+    margin-right: 1.6rem;
+}
+}
+
+@media screen and (max-width:1250px) {
+.herobackground{
+    display: none;
+}
+
+}
+
+
+
+/* ...................................hero section stylling............................................. */
+
+.hero__section{
+    min-height: 78.7rem;
+    background-image: linear-gradient(to bottom, #F22F46, #E43161, #CB348E, #CB348E );
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+}
+
+.herobackground{
+    position: absolute;
+    right: -1rem;
+}
+.first__backgroundimage__hero__section{
+    z-index: 1;
+    bottom: 0;
+}
+.second__backgroundimage__hero__section{
+    top: 0;
+}
+.hero__section__content{
+    z-index: 3;
+    position: absolute;
+    width: 85%;
+}
+.hero__section__primary{
+    margin-top: 10rem;
+    font-family: 'Twilio Sans Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.8rem;
+    line-height: 92%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.hero__section__secondary{
+    margin-top: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+
+
+.hero__section__btn{
+    width: 25.6rem;
+    padding: 1.6rem 0rem;
+    margin-top: 3.2rem;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-align: center;
+    color: #001541;
+}
+.registericon{
+    transform: translateY(1.5px);
+}
+@media screen and (max-width: 1340px){
+.hero__section__primary{
+    font-size: 9rem;
+}
+
+.hero__section__secondary{
+    font-size: 2rem ;
+}
+.hero__section__secondary br{
+display: none;
+}
+}
+@media screen and (max-width: 450px){
+    .hero__section__primary{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+    }
+    .hero__section__secondary{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        color: #FFFFFF;
+
+    }
+    .hero__section{
+    min-height: 104.5rem;
+    }
+    .hero__section__btn{
+        margin-bottom: 4.8rem;
+    }
+}
+
+
+
+
+/* ........................................second section styling....................................... */
+
+
+.second__section{
+    display: flex;
+    justify-content: center;
+}
+.second__section__content{
+    border-radius: 1rem;
+    margin-top: -27rem;
+    width: 85%;
+    z-index: 1;
+}
+.second__section__first{
+    min-height: 90.24rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3.6rem 6rem;
+    border: 2px solid #CACDD8;
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas: "head"
+                         "image"
+                         "decs";
+}
+
+.second__section__first__head{
+    grid-area: head;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+.second__section__first__image{
+    grid-area: image;
+    /* background-color: purple; */
+}
+.second__section__first__decs{
+    grid-area: decs;
+    /* background-color: blue; */
+    padding: 3rem 0rem;
+}
+.second__section__first__primary{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+}
+.second__section__first__secondary{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 125%;
+    color: #001541;
+
+}
+.second__section__first__image img{
+    /* width: 109.6rem;
+    height: 44.3rem; */
+    width: 90%;
+}
+
+.second__section__first__decs{
+    display: flex;
+    justify-content: space-between;
+}
+.second__section__first__terninary{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+}
+.second__section__first__quaternary{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 125%;
+    color: #001541;
+    margin-right: 7.6rem;
+    
+}
+
+.second__section__second{
+    min-height: 30.1rem;
+    margin-top: 4rem;
+    background-image: url(./IMAGE//sectionnumberbackground.svg);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+.second__section__second h3{
+    text-align: center;
+    font-family: 'Twilio Sans Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 9.6rem;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.second__section__second p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+.second__section__second__days{
+    border-right: 2px solid #CACDD8;
+    width: 100%;
+}
+.second__section__second__site{
+    border-right: 2px solid #CACDD8;
+    width: 100%;
+}
+.second__section__second__section{
+    width: 100%;
+}
+.second__section__third{
+    margin-top: 4rem;
+    /* background-color: red; */
+    min-height: 71.6rem;
+    padding: 2rem 0rem;
+}
+.second__section__first__penta{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+}
+
+.second_section__choose{
+    display: flex;
+    font-family: Twilio sans Text;
+    padding: .3rem;
+    border: 1px solid #E1E3EA;
+    border-radius: 1rem;
+    max-width: max-content;
+    margin-top: 3rem;
+}
+.second_section__choose p{
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: .8rem;
+    margin-right: .1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    /* color: #FFFFFF; */
+    
+}
+
+.activebtn{
+    background-image: linear-gradient( to right, #CB348E, #EC3092, #F22F46  );
+    color: white;
+}
+.second__section__third__content{
+    min-height: 50.5rem;
+    border: 2px solid #CACDD8;
+    border-radius: 1rem;
+    margin-top: 8rem;
+    padding: 6.7rem 6.2rem;
+    display: flex;
+}
+
+.second__section__third__content__img{
+width: 65%;
+}
+.second__section__third__content__react__content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8rem;
+}
+.second__section__third__content__react__content h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #1F304C;
+    margin-bottom: 4.5rem;
+}
+.second__section__third__content__react__content p{
+    font-size: 1.7rem;
+    font-family: Twilio sans Text;
+    margin: 1rem 0rem;
+}
+.second__section__third__content__react__content p span img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+.second__section__forth__primary{
+    margin: 6rem 0rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+}
+.second__section__forth__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28.3rem, 1fr));
+    grid-gap: 1.3rem;
+    margin-bottom: 6.4rem;
+}
+.second__section__forth__content div{
+    border: 2px solid #CACDD8;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    min-height: 28.3rem;
+}
+.second__section__forth__content div img{
+    width: 15rem;
+    height: 14.174rem;
+}
+.second__section__forth__content div p{
+    margin-top: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 125%;
+    text-align: center;
+    color: #001541;
+}
+
+@media screen and (max-width:980px) {
+  .second__section__first__head{
+      flex-direction: column;
+      justify-content: start;
+  }  
+  .second__section__first br{
+      display: none;
+
+  }
+  .second__section__first__image img{
+    width: 95%;
+    margin-bottom: 3.3rem;
+    }
+  .second__section__first{
+      padding: 3.6rem 2.5rem;
+  }
+  .second__section__first__decs{
+    flex-direction: column;
+    justify-content: start;
+
+  }
+  .second__section__first__primary{
+     font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em; 
+    margin-bottom: 2.396rem;
+  }
+.second__section__first__secondary{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  
+}
+.second__section__first__terninary{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 125%;
+    margin-bottom: 1.9rem;
+}
+.second__section__first__quaternary{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+.second__section__first__decs{
+    padding-top: 0rem;
+
+}
+
+}
+@media screen and (max-width:900px) {
+    .second__section__second{
+    grid-template-columns: 1fr;
+    min-height: 49.6rem;
+    padding: 3.2rem 5.6rem;
+    }
+    .second__section__second h3{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    padding-top:2.4rem ;
+    }
+
+    .second__section__second p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin-bottom: 2.4rem;
+
+    }
+    .second__section__second div{
+    border-bottom: 2px solid #CACDD8;
+    border-right: 0px;
+    }
+    .second__section__forth__primary{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .second__section__third__content >div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .second__section__third__content__img {
+        width: 100%;
+    }
+    .second__section__third__content__react__content{
+        align-self: flex-start;
+    }
+    .second__section__third__content__react__content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .second_section__choose p {
+        padding: 1rem .5rem;
+    }
+    .second_section__choose {
+        justify-content: space-between;
+    }
+    .second_section__choose {
+    width: 100%;
+    min-width: 90vw;
+    }
+
+}
+
+/* ..........mobile version-------------------------- */
+
+.second__section__third__mobilecontent{
+    margin-top: 3.2rem;
+    min-height: 53.3rem;
+    border: 1px solid #CACDD8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .8rem;
+    padding-top: 3.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+.second__section__third__mobilecontent > img{
+    width: 100%;
+}
+
+.second__section__third__mobilecontent__content{
+    align-self: flex-start;
+}
+
+.second__section__third__mobilecontent__content h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #1F304C;
+    margin: 3.2rem 0;
+}
+
+.second__section__third__mobilecontent__content p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1F304C;
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.second__section__third__mobilecontent__content p span{
+    margin-right: 1.6rem;
+}
+.tick{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/*                js  part ................................ */
+
+.second__section__third__content{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+@media screen and (max-width:600px) {
+    .second__section__forth__content{
+        grid-template-columns: repeat(2,  1fr);
+        grid-gap: .9rem;
+    }
+    .second__section__forth__content div{
+        padding: 2rem;
+        min-height: 15.9rem;
+    }
+    .second__section__forth__content div img{
+        width: 12rem;
+        height: 11.1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .second__section__content{
+        margin-top: -40.2rem;
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .second__section__content{
+        margin-top: -40.2rem;
+    }
+}
+@media screen and (max-width:354px){
+    .second__section__content{
+        margin-top: -36.2rem;
+    }
+}
+@media screen and (max-width:354px){
+.second__section__forth__content{
+    grid-template-columns: repeat(2,  1fr);
+    grid-gap: .4rem;
+}
+.second__section__forth__content div{
+    padding: 1rem;
+}
+.second__section__forth__content div img{
+    width: 10rem;
+    height: 9.1rem;
+}
+}
+/* ........................................third section styling....................................... */
+
+
+.third__section{
+    min-height:59.6rem;
+   background-image: url('./IMAGE/commonpofeesional.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5.8rem;
+}
+
+.third__section__content{
+    /* position: absolute;
+    z-index: 1; */
+    width: 85%;
+}
+.third__section__primary{
+    margin: 6rem 0rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+}
+
+.third__section__main__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 1.6rem;
+}
+.third__section__main__content div{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.third__section__main__content div img{
+    width: 20%;
+}
+.third__section__main__content div p{
+    margin-left: 2rem;
+    font-weight: 600;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #001541;
+
+}
+
+@media screen and (max-width:900px) {
+
+.third__section__primary{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+}
+.third__section__main__content{
+    grid-template-columns: repeat(auto-fit, minmax(32.7rem, 1fr));
+    grid-gap: 1.6rem;
+}
+
+}
+
+
+/* ........................................forth section styling....................................... */
+
+.graph__section{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.4rem;
+}
+.graph__section__content{
+    width: 85%;
+    min-height: 53rem;
+}
+.graph__section__content__head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+}
+.graph__section__content__body >div{
+    border: 1px solid #CACDD8;
+    display: flex;
+    margin-right: 2.66rem;
+    min-height: 44.2rem;
+    border-radius: .8rem;
+}
+
+.graph__section__content__head__primary{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+}
+.graph__section__content__head__primary__secondary{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #001541;
+    margin-right: 17rem;
+}
+.graph__section__content__head__primary__secondary a{
+    text-decoration:underline;
+    font-weight: 600;
+    
+}
+.graph__section__content__body{
+    display: flex;
+    align-items: center;
+}
+
+.graph__section__content__body__first{
+    margin-right: 7.2rem;
+}
+
+.graph__section__content__body__datacollection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.graph__section__content__body__datacollection__items{
+display: flex;
+margin-bottom: 2.4rem;
+min-width: 20rem;
+justify-content: space-between;
+margin-right: 6rem;
+}
+.graph__section__content__body__datacollection__items h4{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #001541;
+}
+.graph__section__content__body__datacollection__items h3{
+margin-right: 0;
+margin-left: 2.4rem;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #001541;
+}
+.graphbox{
+    width: 6.9rem;
+    height: 2.7rem;
+    background: linear-gradient(209.86deg, #533E8A 10%, #CB358E 103.35%);
+    border-radius: .4rem;
+    margin-right: 1.6rem;
+}
+.purplepink{
+    background: linear-gradient(209.86deg, #533E8A 10%, #CB358E 103.35%);
+}
+.redyellow{
+    background: linear-gradient(134.16deg, #FFFFFF -7.62%, #FBC960 -0.65%, #F58875 34.55%, #F22F46 84.89%);
+}
+.redpurple{
+    background: linear-gradient(102.84deg, #CB348E 0.95%, #EC3092 36.24%, #F22F46 82.7%);
+}
+.bluewhite{
+    background: linear-gradient(129.2deg, #007093 -23.18%, #11BDF2 -16.77%, #FFFFFF 95.3%);
+}
+
+.graphgroup__photo{
+    width: 49.1rem;
+    height: 44.2rem ;
+}
+@media screen and (max-width:1370px) {
+    .graph__section__content__body__first{
+        width: 50%;
+        margin-right: 0rem;
+    }
+    .graphgroup__photo{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:980px) {
+.graph__section__content__head{
+    flex-direction: column;
+}
+.graph__section__content__body{
+    flex-direction: column;
+}
+.graph__section__content__body > div{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0rem;
+}
+.graphgroup__photo{
+    width: 100%;
+    margin-top: 2.4rem;
+}
+.graph__section__content__body__datacollection{
+    margin-top: 2.4rem;
+}
+.graph__section__content__head__primary{
+    margin-bottom: 1.7rem;
+}
+}
+
+/* ..........................sponsor__section.................................................... */
+
+.sponsor__section{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.4rem;
+}
+.sponsor__section__contents{
+    min-height: 229.866rem;
+    width: 85%;
+    /* background-color: rgb(0, 255, 21); */
+}
+
+.sponsor__section__content__first{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: ". visionary innovator maker";
+}
+.sponsor__section__content__item img{
+    height: 4.4rem;
+    width: 4.4rem;
+    margin-bottom: 1.134rem;
+}
+.sponsor__section__content__item{
+padding-left: 2.243rem;
+border-left: 1px solid #E1E3EA;
+padding-bottom: 1.776rem;
+padding-top: 1.776rem;
+}
+.sponsor__section__content__item h5{
+    font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 3.2rem;
+line-height: 125%;
+letter-spacing: -0.01em;
+color: #001541;
+
+}
+
+.sponsor__section__content__primarys{
+    font-family: 'Twilio Sans Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+    margin-bottom: 4.8rem;
+}
+
+
+.sponsor__section__content__primary{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 175%;
+letter-spacing: 0.02em;
+color: #001541;
+}
+
+.sponsor__section__content__secondary{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #001541;
+}
+
+
+.visionary{
+    grid-area: visionary;
+    /* grid-column: 2/3; */
+}
+.innovator{
+    grid-area: innovator;
+
+}
+.maker{
+    grid-area: maker;
+
+}
+
+.sponsor__section__content__second{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 6.2rem;
+    background: linear-gradient(91.31deg, #007093 -257.67%, #11BDF2 -238.44%, #FFFFFF 97.82%);
+}
+.sponsor__section__content__second div{
+    border-left: 1px solid #E1E3EA;
+}
+.sponsor__section__content__second h5{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 125%;
+color: #001541;
+margin-left: 2.596rem;
+margin-top: 1.6rem;
+}
+
+.sponsor__section__content__third{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sponsor__section__content__third div{
+    padding: 2rem;
+    border:  1px solid #E1E3EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor__section__content__third div h6{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 150%;
+
+color: #1F304C;
+}
+
+
+.sponsor__section__content__third div p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #1F304C;
+}
+
+.sponsor__section__content__forth{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 6.2rem;
+    background: linear-gradient(90.67deg, #FBD6E9 -58.1%, #FFFFFF 111.06%), linear-gradient(90.69deg, #FEEB55 -323.23%, #FEEB55 -104.52%, rgba(255, 255, 255, 0.35) 124.55%);
+}
+.sponsor__section__content__forth div{
+    border-left: 1px solid #E1E3EA;
+}
+.sponsor__section__content__forth h5{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 125%;
+color: #001541;
+margin-left: 2.596rem;
+margin-top: 1.6rem;
+}
+
+.sponsor__section__content__fifth{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sponsor__section__content__fifth div{
+    padding: 2rem;
+    border:  1px solid #E1E3EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor__section__content__fifth div h6{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 150%;
+
+color: #1F304C;
+}
+.sponsor__section__content__fifth div img{
+width: 1.597rem;
+margin: auto;
+}
+
+.sponsor__section__content__fifth div p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #1F304C;
+}
+
+.sponsor__section__content__sixth{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 6.2rem;
+    background: linear-gradient(271.92deg, #FFFFFF 10.38%, #FFFDDC 99.8%);
+}
+.sponsor__section__content__sixth div{
+    border-left: 1px solid #E1E3EA;
+}
+.sponsor__section__content__sixth h5{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 125%;
+color: #001541;
+margin-left: 2.596rem;
+margin-top: 1.6rem;
+}
+
+.sponsor__section__content__seventh{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sponsor__section__content__seventh div{
+    padding: 2rem;
+    border:  1px solid #E1E3EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor__section__content__seventh div h6{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 150%;
+
+color: #1F304C;
+}
+.sponsor__section__content__seventh div img{
+width: 1.597rem;
+margin: auto;
+}
+
+.sponsor__section__content__seventh div p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #1F304C;
+}
+
+.sponsor__section__content__eightth{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 6.2rem;
+    background: linear-gradient(90.24deg, #DDD8E8 -49.76%, #FFFFFF 76.54%);
+}
+.sponsor__section__content__eightth div{
+    border-left: 1px solid #E1E3EA;
+}
+.sponsor__section__content__eightth h5{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 125%;
+color: #001541;
+margin-left: 2.596rem;
+margin-top: 1.6rem;
+}
+
+
+.sponsor__section__content__ninth{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sponsor__section__content__ninth div{
+    padding: 2rem;
+    border:  1px solid #E1E3EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor__section__content__ninth div h6{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 150%;
+
+color: #1F304C;
+}
+.sponsor__section__content__ninth div img{
+width: 1.597rem;
+margin: auto;
+}
+
+.sponsor__section__content__ninth div p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #1F304C;
+}
+
+
+
+/*  ................................................................................................. sponsor mobile view ..............................................................*/
+
+
+.sponsor__section__contents__mobile{
+width: 85%;
+}
+.sponsor__section__contents__item{
+    /* padding: 1rem; */
+    margin-bottom: .8rem;
+    border: 1px solid #E1E3EA;
+    border-radius: .8rem;
+    padding-bottom: 2rem;
+}
+.sponsor__section__contents__item__answer{
+    padding: 0 2.4rem ;
+    display: none;
+    
+}
+.sponsor__section__contents__item__answer__first{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: 'Twilio Sans Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 125%;
+    color: #001541;
+    min-height: 6.2rem;
+    margin-top: 1.764rem;
+    margin-bottom: .8rem;
+    background: linear-gradient(91.31deg, #007093 -257.67%, #11BDF2 -238.44%, #FFFFFF 97.82%), #C4C4C4;
+    padding-left: 1.2rem;
+    align-content: center;
+
+}
+.sponsor__section__contents__item__answer__second{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sponsor__section__contents__item__answer__second div{
+    padding: .8rem;
+    border: 1px solid #E1E3EA;
+}
+
+
+.sponsor__section__contents__item__answer__second h5{
+    font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 150%;
+color: #1F304C;
+}
+.sponsor__section__contents__item__answer__second p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #1F304C;
+}
+.sponsor__section__contents__item__question{
+    display: flex;
+    align-items: center;
+    min-height: 12.4rem;
+}
+
+.sponsor__section__contents__item__question img{
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-left: 2.2rem;
+    margin-right: 1.5rem;
+}
+
+.sponsor__section__contents__item__content__primary{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 175%;
+letter-spacing: 0.02em;
+color: #001541;
+}
+.sponsor__section__contents__item__content h5{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 125%;
+letter-spacing: -0.01em;
+color: #001541;
+}
+
+.sponsor__section__contents__item__content__secondary{
+    font-family: 'Twilio Sans Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #001541;
+}
+
+
+.sponsor__section__contents__item__answer__second div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor__section__contents__item__answer__second div img{
+    margin: auto;
+}
+
+.marginright{
+    margin-right: 2.4rem;
+}
+
+.show-answer  > div:nth-child(2){
+    display: block;
+}
+
+@media  screen and (max-width:701px) {
+    .mobile{
+        display: flex;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+/* ............................. carosel__section ............................................................................ */
+
+.carosel__section{
+    display: flex;
+    justify-content: center;
+    margin-top: 7.034rem;
+}
+.carosel__section__content{
+    width: 85%;
+    min-height: 37.8rem;
+    border-radius: 1rem;
+}
+
+
+
+/* ............................. additionmarket__section ............................................................................ */
+
+.additionmarket__section{
+    margin-top: 11.585rem;
+    display: flex;
+    justify-content: center;
+}
+.additionmarket__section__contents{
+    width: 85%;
+    min-height: 123.1rem;
+}
+
+
+.additionmarket__section__primary{
+    font-family: 'Twilio Sans Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #001541;
+}
+
+.additionmarket__section__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32.7rem,1fr));
+    grid-gap: 2.3rem;
+    margin-top: 3.2rem;
+}
+
+.additionmarket__section__content__item{
+    border: 1px solid #E1E3EA;
+    padding-left:2.45rem ;
+    padding-right:2.45rem ;
+    padding-top: 3.2rem;
+    border-radius: .8rem;
+    /* min-height: 37.4rem; */
+}
+.additionmarket__section__content__first__part{
+    display: flex;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #E1E3EA;
+
+}
+.additionmarket__section__content__first__part img{
+    width: 6rem;
+    height: 6rem;
+}
+.additional__section__content__first__part__primary{
+    margin-left: 2.4rem;
+}
+.additionmarket__section__content__first__part h6{
+   font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 400;
+font-size: 2.4rem;
+line-height: 125%;
+color: #030B5D; 
+}
+
+.additionmarket__section__content__first__part p{
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 150%;
+color: #030B5D;
+}
+.additionmarket__section__content__second__part{
+padding-top: 2.4rem;
+}
+.additionmarket__section__content__second__part p{
+  font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #030B5D; 
+padding-bottom: 1.6rem; 
+}
+.additionmarket__section__content__second__part p img{
+width: 1.6rem;
+height: 2.0rem;
+margin-right: .8rem;
+}
+
+.additionalmobileicon{
+    display: none;
+}
+
+
+
+
+/*    additionmarket mobile version */
+
+
+.show-another div:nth-child(2){
+    display: block;
+}
+.icon{
+    font-size: 1.8rem;
+   
+}
+.additionalmobileicon{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+
+@media screen and (max-width:701px) {
+.additionmarket__section__content__second__part{
+    display: none;
+}
+.additionalmobileicon{
+    display: flex;
+}
+
+}
+@media screen and (max-width:360px) {
+    .additional__section__content__first__part__primary br{
+        display: none;
+    } 
+}
+
+
+
+
+
+
+
+
+/* ..................................... ready sponsor */
+
+.ready__sponsor{
+    margin-top: 6.4rem;
+    display: flex;
+    justify-content: center;
+}
+.ready__sponsor__content{
+    width: 85%;
+    min-height: 37.3rem;
+    background-image: url("./IMAGE/readysponsorbackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 8.1rem;
+    padding-top: 9.885rem;
+    border-radius: .8rem;
+}
+.ready__sponsor__content h6{
+font-family: 'Twilio Sans Display';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 125%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+.ready__sponsor__content p{
+    margin-top: 1.6rem;
+    font-family: 'Twilio Sans Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: #FFFFFF;
+
+}
+
+.ready__sponsor__content button{
+
+width: 15.9rem;
+height: 5.3rem;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 1rem;
+font-family: 'Twilio Sans Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #001541;
+margin-top: 3.05rem;
+cursor: pointer;
+
+}
+
+
+@media screen and (max-width:900px ){
+    .ready__sponsor__content{
+        padding: 3.9rem 2.5rem;
+    }
+
+    .ready__sponsor__content h6{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    }
+    .ready__sponsor__content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 125%;
+    }
+}
+
+
+
+
+
+/* ....................................footer .................................................................. */
+
+.footer{
+    min-height:29.3rem;
+    background: linear-gradient(133.71deg, #EC3092 -451.76%, #FFFFFF 67.17%), #001541;
+    position: relative;
+    overflow: hidden;
+    margin-top: 6.4rem;
+    display: flex;
+    justify-content: center;
+
+}
+.footer__content{
+    height: 100%;
+    width: 85%;
+    position: absolute;
+    z-index:7;
+}
+
+.footerbackgroundimage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+.footer__mainlogo{
+    margin-top: 7.5rem;
+    margin-bottom: 3.3rem;
+}
+
+.footer__content >p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 7.3rem;
+}
+.footer__content >p span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    background: linear-gradient(102.84deg, #CB348E 0.95%, #EC3092 36.24%, #F22F46 82.7%), #EC3092;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.footer__content > div {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__content div p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 175%;
+    letter-spacing: 0.02em;
+}
+
+.footer__content div img{
+
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 2.1rem;
+}
+
+@media screen and (max-width:500px){
+    .footer{
+        min-height:42.3rem;
+    }
+    .footer__content > div {
+        flex-direction: column-reverse;
+    }
+
+    .footer__img__collection{
+        display: flex;
+        margin-bottom: 9.8rem;
+    }
+    .footer__content >p {
+        margin-bottom: 6.93rem;
+    }
+
+}
+@media screen and (max-width:380px){
+    .footerbackgroundimage{
+right: -525px;
+    }
+}
+.mobile{
+    display: none;
+}
+.secondsectionmobile{
+display: none;
+}
+
+@media screen and (max-width:900px){
+
+    .mobile{
+        display: flex;
+    }
+
+    
+}
+@media screen and (max-width:400px){
+    .secondsectiondesktop{
+        display: none;
+    }   
+     .secondsectionmobile{
+        display: block;
+    }
+
+
+}
+
+.mobile__links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    min-height: 100vh;
+    z-index: 10; 
+     padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: .2s;
+}
+.activelink ul{
+    transform: translateX(0);
+}
+
+.mobile__links li a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 21px;
+    color: #533E8A;
+   
+}
+.mobile__links li{
+    margin-bottom: 3rem;
+}
